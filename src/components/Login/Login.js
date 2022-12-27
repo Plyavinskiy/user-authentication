@@ -4,7 +4,7 @@ import Card from "../UI/Card/Card";
 import Button from "../UI/Button/Button";
 import classes from "./Login.module.css";
 
-const Login = () => {
+const Login = (props) => {
   const [enteredEmail, setEnteredEmail] = useState("");
   const [emailIsValid, setEmailIsValid] = useState();
   const [enteredPassword, setEnteredPassword] = useState("");
@@ -37,6 +37,7 @@ const Login = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+    props.onLogin(enteredEmail, enteredPassword);
   };
 
   return (

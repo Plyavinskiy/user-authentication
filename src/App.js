@@ -1,5 +1,11 @@
+import MainHeader from "./components/MainHeader/MainHeader";
+
 const App = () => {
-  return <div className="App">Getting Started!</div>;
+  return (
+    <>
+      <MainHeader />
+    </>
+  );
 };
 
 export default App;

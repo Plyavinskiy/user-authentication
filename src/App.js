@@ -1,5 +1,6 @@
 import MainHeader from "./components/MainHeader/MainHeader";
 import Login from "./components/Login/Login";
+import Home from "./components/Home/Home";
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
       <MainHeader />
       <main>
         <Login />
+        <Home />
       </main>
     </>
   );
